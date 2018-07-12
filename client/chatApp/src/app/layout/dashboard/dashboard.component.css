@@ -1,0 +1,31 @@
+.chatList{
+    height: 100vh;
+    border-right: 1px black solid; 
+}
+.chatView{
+    height: 100vh;
+}
+
+.userImg{
+    float: left;
+}
+
+.userProfile{
+    height: 100px;
+    background-color: white;
+    padding: 20px 0px;
+}
+
+  .logoutbtn{
+      padding-top:20px;
+  }
+
+
+.chatPerson{
+    font-size: 20px;
+    padding: 12px 90px;
+}
+
+
+
+  

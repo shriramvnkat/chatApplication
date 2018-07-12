@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.align-left {
+    text-align: left;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+  
+  .float-right {
+    float: right;
+  }
+
+  .float-left{
+    float: left; 
+  }
+
+  .profileImg{
+    height: 80px;
+    width: 80px;
+  }
+
+  .pos{
+    position: relative;
+  }

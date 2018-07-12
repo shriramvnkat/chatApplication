@@ -1,0 +1,27 @@
+<div>
+  <div class="chat-history">
+    <ul>
+     <ng-container *ngFor="let content of userHistory.messageList">
+          
+                <li class="clearfix" *ngIf="content.user != userHistory.username">
+                        <div class="message-data align-right">
+                            <div class="message other-message float-right">
+                               {{content.data}}:{{content.user}}
+                              </div>
+                        </div>
+                    </li> 
+                    <li class="clearfix" *ngIf="content.user  == userHistory.username">
+                        <div class="message-data align-left">
+                            <div class="message my-message float-left">
+                               {{content.data}}:{{content.user}}
+                              </div>
+                        </div>
+                    </li> 
+     </ng-container>
+    </ul>
+</div>
+<div class="chat-message">
+    <textarea placeholder="Type your message" class="form-control messageArea" [(ngModel)]="userHistory && userHistory.message"></textarea>
+    <button class="btn btn-primary pull-right sendBtn pos"  (click)="sendMessage()">Send</button>
+ </div>
+</div>
